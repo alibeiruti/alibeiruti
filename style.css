@@ -37,13 +37,14 @@ footer {
   padding: 20px;
   color: #666;
 }
-.profile-photo {
-    width: 200px;       /* or whatever size fits your site */
-    height: auto;       /* keeps the aspect ratio */
-    border-radius: 50%; /* optional circular look */
-    display: block;
-    margin: 20px auto;  /* centers the photo */
+.profile-pic {
+  width: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px;
 }
+
 
 
 
