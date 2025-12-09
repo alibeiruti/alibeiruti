@@ -40,7 +40,7 @@ h4,
 h5,
 h6 {
   line-height: 1;
-  text-rendering: optimizeLegibility; /*  voodoo to enable ligatures and kerning | https://developer.mozilla.org/en-US/docs/CSS/text-rendering */
+  text-rendering: optimizeLegibility;
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
@@ -56,10 +56,7 @@ h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
  * Paragraphs
  */
 p {
-  margin: 0 auto 1.5em auto; /* bottom margin for paragraphs */
-}
-p + p {
-
+  margin: 0 auto 1.5em auto;
 }
 
 /**
@@ -68,15 +65,10 @@ p + p {
 q {
   quotes: '\00201C' '\00201D';
 }
-q:before {
-  content: open-quote;
-}
-q:after {
-  content: close-quote;
-}
+q:before { content: open-quote; }
+q:after { content: close-quote; }
 
 blockquote {
-  /*background-color: #F8F8F8;*/
   border-left: 2px solid #AFC0D2;
   margin: 1.6em 10%;
   padding: .75em 1em;
@@ -101,12 +93,23 @@ body {
   margin:25px auto;
 }
 header, #content, footer { 
-  background: rgba(0,0,0,.8); 
+  background: rgba(0,0,0,.82); 
   padding:25px;
   color:#FFFFFF; 
+  box-shadow:0 0 25px rgba(0,0,0,0.55);
 }
 iframe {
   max-width:100%;
+}
+
+/* Header tweaks */
+#header h1 {
+  margin-bottom:0.5rem;
+}
+#header h4 {
+  margin-top:0;
+  margin-bottom:1.5rem;
+  color:#c8d0e0;
 }
 
 /* Menu Links */
@@ -140,4 +143,154 @@ ul.main-menu li a.active {
   display:block;
 }
 
+/* ===== Hero section ===== */
+.hero {
+  display:flex;
+  flex-wrap:wrap;
+  gap:2.0rem;
+  align-items:center;
+  animation: fadeInUp 0.7s ease;
+}
+.hero-left {
+  flex:0 0 180px;
+  text-align:center;
+}
+.hero-right {
+  flex:1;
+}
+.lead {
+  color:#d5d7df;
+  max-width: 40rem;
+}
+.btn-cta {
+  display:inline-block;
+  padding:0.8rem 1.6rem;
+  border-radius:999px;
+  background:#EF6D3D;
+  color:#fff;
+  font-size:1.6rem;
+  box-shadow:0 0.5rem 1.8rem rgba(0,0,0,0.4);
+}
+.btn-cta:hover {
+  background:#ff8a54;
+}
 
+/* Profile photo */
+.profile-photo {
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  object-fit:cover;
+  box-shadow:0 0.8rem 2.4rem rgba(0,0,0,0.7);
+  border:3px solid rgba(255,255,255,0.8);
+  animation: floaty 4s ease-in-out infinite;
+}
+
+/* Cards grid */
+.card-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap:1.6rem;
+  margin-top:1.8rem;
+}
+
+.info-card {
+  background:rgba(5,10,25,0.9);
+  border-radius:1.2rem;
+  padding:1.6rem;
+  box-shadow:0 1.2rem 3.0rem rgba(0,0,0,0.7);
+  border:1px solid rgba(255,255,255,0.06);
+  transform: translateY(10px);
+  opacity:0;
+  animation: cardIn 0.8s forwards;
+}
+.info-card:nth-child(2) { animation-delay:0.1s; }
+.info-card:nth-child(3) { animation-delay:0.2s; }
+.info-card:nth-child(4) { animation-delay:0.3s; }
+
+.info-card h3, .info-card h4 {
+  margin-bottom:1rem;
+}
+
+.info-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow:0 1.6rem 3.5rem rgba(0,0,0,0.9);
+}
+
+/* Demo / illustrative cards */
+.demo-card {
+  background:rgba(90,20,20,0.9);
+}
+
+/* Publications card */
+.pub-card {
+  background:rgba(5,10,25,0.9);
+  border-radius:1.2rem;
+  padding:1.6rem;
+  box-shadow:0 1.2rem 3.0rem rgba(0,0,0,0.7);
+}
+.pub-meta {
+  color:#cfd2da;
+  font-size:1.4rem;
+}
+
+/* Notes */
+.note {
+  font-size:1.4rem;
+  color:#c9cedc;
+}
+.section-subtitle {
+  margin-top:2.2rem;
+}
+footer {
+  text-align:center;
+  font-size:1.3rem;
+}
+
+/* Content region fade */
+.content-region {
+  animation: fadeInUp 0.6s ease;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity:0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity:1;
+    transform:none;
+  }
+}
+@keyframes floaty {
+  0% { transform:translateY(0); }
+  50% { transform:translateY(-8px); }
+  100% { transform:translateY(0); }
+}
+@keyframes cardIn {
+  from {
+    opacity:0;
+    transform:translateY(18px);
+  }
+  to {
+    opacity:1;
+    transform:none;
+  }
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  body {
+    margin:10px auto;
+  }
+  header, #content, footer {
+    padding:18px;
+  }
+  .hero-left {
+    flex-basis:100%;
+  }
+  .hero-right h2 {
+    font-size:2.2rem;
+  }
+}
