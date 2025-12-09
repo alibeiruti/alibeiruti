@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ali Beiruti | Pharma Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <h1>Ali Beiruti</h1>
+    <p>Pharmaceutical Sales | Healthcare Strategy | Medical Programs</p>
+  </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#impact">Impact</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <img src="images/profile.jpg" alt="Ali Beiruti" class="profile-photo">
+    <div>
+      <h2>Transforming clinical insight into commercial impact</h2>
+      <p class="lead">
+        Healthcare professional with academic medical center experience and pharmaceutical sales training.
+        Focused on territory strategy, provider engagement, and patient access solutions.
+      </p>
+      <a class="cta" href="contact.html">Connect</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="panel fade-up">
+  <h3>About Me</h3>
+  <p>
+    I support clinical and technical initiatives within a leading academic medical center, partnering with clinicians,
+    administrators, and IT teams to deliver workflow optimization, system configuration, and analytic insights.
+  </p>
+</section>
+
+<section id="impact" class="panel fade-up">
+  <h3>Professional Impact & Portfolio Case Studies</h3>
+
+  <div class="impact-grid">
+    <div class="impact-card">
+      <h4>Healthcare Systems Strategy</h4>
+      <p>Led multiple system optimization initiatives to improve efficiency and clinical data utilization.</p>
+    </div>
+    
+    <div class="impact-card">
+      <h4>Commercial Training</h4>
+      <p>Completed pharmaceutical sales training focused on territory planning and provider engagement.</p>
+    </div>
+
+    <div class="impact-card">
+      <h4>Territory Growth Model (Illustrative)</h4>
+      <p>Designed a projected growth model estimating 15–18% expansion using representative payer data.</p>
+    </div>
+
+    <div class="impact-card">
+      <h4>Provider Engagement Framework</h4>
+      <p>Built a mock detailing framework focused on evidence-based communication and adherence barriers.</p>
+    </div>
+
+    <div class="impact-card">
+      <h4>Patient Access Strategy</h4>
+      <p>Designed conceptual financial navigation workflows addressing coverage delays and affordability.</p>
+    </div>
+  </div>
+
+  <p class="disclaimer">
+    Portfolio case studies are representative and illustrative for presentation purposes.
+  </p>
+</section>
+
+<footer>
+  <p>© 2025 Ali Beiruti • <a href="contact.html">Contact</a></p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".impact-card, .fade-up");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.2 });
+  elements.forEach(el => observer.observe(el));
+});
+</script>
+
+</body>
+</html>
