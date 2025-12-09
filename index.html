@@ -3,38 +3,37 @@
   <head>
     <!-- Page setup -->
     <meta charset="utf-8">
-    <title>Your title here</title>
-    <meta name="description" content="A brief description of your site for search engines">
-    <meta name="author" content="Information about the author here">
+    <title>Ali Beiruti | Pharma Portfolio</title>
+    <meta name="description" content="Pharmaceutical sales–focused portfolio for Ali Beiruti">
+    <meta name="author" content="Ali Beiruti">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="icon" type="image/png" href="favicon.png">
   
     <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
-    <!-- Custom styles -->
     <link href="style.css" rel="stylesheet" type="text/css" />
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
-
-    <!-- Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>    
   </head>
   
   <body>
 
     <header id="header">
-      <img src="logo.png">
-      <h1>Simple Website</h1>
+      <!-- Optional logo
+      <img src="logo.png" alt="Logo">
+      -->
+      <h1>Ali Beiruti</h1>
+      <h4>Pharmaceutical Sales · Healthcare Strategy · Medical Programs</h4>
       
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
+      <!-- Menu links -->
       <ul class="main-menu">
         <li><a href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#publications">publications</a></li>
         <li><a href="#contact">contact</a></li>
       </ul>                 
     </header>
@@ -43,25 +42,119 @@
       <div class="inner">
         <div id="content"> 
           
+          <!-- HOME -->
           <div id="home" class="content-region hide">
-            <h2>Home</h2>
-            <p>
-              This is a simple website template published with Github Pages. <a href="https://github.com/zirafa/simple-website-template">Fork this repository</a> to create your own site!
-            </p>
+            <div class="hero">
+              <div class="hero-left">
+                <img src="images/profile.jpg" alt="Ali Beiruti" class="profile-photo">
+              </div>
+              <div class="hero-right">
+                <h2>Healthcare professional turning clinical insight into commercial impact.</h2>
+                <p class="lead">
+                  Program coordination at Weill Cornell Medicine, hands-on patient care experience,
+                  and pharmaceutical sales training — focused on territory strategy, provider engagement,
+                  and patient access solutions.
+                </p>
+                <a class="btn-cta" href="#contact">Connect with me</a>
+              </div>
+            </div>
           </div>
           
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
+          <!-- EXPERIENCE / IMPACT -->
+          <div id="experience" class="content-region hide">
+            <h2>Experience & Impact</h2>
             <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
+              I partner with clinicians, administrators, and technical teams to improve workflows,
+              support EPIC implementations, and translate data into meaningful insights — while
+              building the commercial mindset needed for pharmaceutical sales.
             </p>
+
+            <div class="card-grid">
+              <div class="info-card">
+                <h3>Academic Medical Center</h3>
+                <p>
+                  Support EPIC-based projects, requirements gathering, and reporting at Weill Cornell Medicine,
+                  aligning clinical workflows with operational goals.
+                </p>
+              </div>
+
+              <div class="info-card">
+                <h3>Commercial Readiness</h3>
+                <p>
+                  Diabetes-focused pharmaceutical sales training covering territory planning,
+                  customer profiling, virtual detailing practice, and objection-handling.
+                </p>
+              </div>
+
+              <div class="info-card">
+                <h3>Patient-Centered Care</h3>
+                <p>
+                  Frontline experience in urgent care and rehab settings, collaborating with providers
+                  to support adherence, follow-up, and access to therapy.
+                </p>
+              </div>
+            </div>
+
+            <h3 class="section-subtitle">Portfolio Case Studies (Illustrative)</h3>
+            <p class="note">
+              The examples below are illustrative portfolio scenarios created for this website to show how I think
+              about territory strategy and access. They are not claims of real commercial performance.
+            </p>
+
+            <div class="card-grid">
+              <div class="info-card demo-card">
+                <h4>Territory Growth Model</h4>
+                <p>
+                  Built a mock territory segmentation plan combining clinic volume, payer mix,
+                  and prescribing potential to identify segments representing a projected
+                  15–18% opportunity under illustrative assumptions.
+                </p>
+              </div>
+              <div class="info-card demo-card">
+                <h4>Provider Engagement Framework</h4>
+                <p>
+                  Designed a sample call structure focused on uncovering needs, aligning evidence-based
+                  messaging, and addressing adherence barriers such as cost, regimen complexity,
+                  and perceived side effects.
+                </p>
+              </div>
+              <div class="info-card demo-card">
+                <h4>Access & Support Pathway</h4>
+                <p>
+                  Mapped a conceptual patient access pathway to address coverage delays, prior
+                  authorizations, and social determinants through collaboration with social work
+                  and support programs.
+                </p>
+              </div>
+            </div>
           </div>
           
+          <!-- PUBLICATIONS -->
+          <div id="publications" class="content-region hide">
+            <h2>Publications</h2>
+            <div class="pub-card">
+              <h3>When a Sample Turns Into a Lifeline</h3>
+              <p class="pub-meta">
+                How Patients Access, Collaborate, and Rely on Social Support to Overcome Gaps in HIV Medication
+              </p>
+              <p>
+                This work explores how patients navigate gaps in access to HIV treatment, including reliance on
+                community support, samples, and advocacy to stay on therapy. It informs how industry can partner
+                ethically with providers and support services to reduce barriers.
+              </p>
+              <!-- Add your real link here if you have it -->
+              <!-- <p><a href="LINK_TO_PDF" target="_blank">View full publication</a></p> -->
+            </div>
+          </div>
+          
+          <!-- CONTACT -->
           <div id="contact" class="content-region hide">
             <h2>Contact</h2>
             <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
+              I’m actively exploring opportunities in pharmaceutical sales and related commercial roles.
             </p>
+            <p><strong>Email:</strong> <a href="mailto:AliBeirutiBusiness@gmail.com">AliBeirutiBusiness@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ali-beiruti" target="_blank">linkedin.com/in/ali-beiruti</a></p>
           </div>
           
         </div>
@@ -69,10 +162,10 @@
     </div>
 
     <footer>  
-      Footer region
+      © 2025 Ali Beiruti
     </footer>
     
-    <!-- Load additional JS scripts here -->
+    <!-- Load JS for section switching -->
     <script type="text/javascript" src="script.js"></script>
     
   </body>
