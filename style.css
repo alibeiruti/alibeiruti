@@ -1,7 +1,3 @@
-/* Force Times New Roman on EVERYTHING */
-body, h1, h2, h3, h4, h5, h6, p, a, li, span, div {
-  font-family: "Times New Roman", Times, serif !important;
-}
 body, h1, h2, h3, h4, h5, h6, p, a, li, span, div {
     font-family: "Times New Roman", Times, serif !important;
 }
@@ -300,77 +296,4 @@ footer {
   .hero-right h2 {
     font-size:2.2rem;
   }
-}
-/* Global size boost */
-body {
-  font-size: 19px;
-  line-height: 1.7;
-}
-
-/* Headings bigger */
-h1 { font-size: 3rem; }
-h2 { font-size: 2.3rem; }
-h3 { font-size: 1.8rem; }
-h4 { font-size: 1.4rem; }
-
-/* Paragraphs & text */
-p, li {
-  font-size: 1.1rem;
-}
-
-/* Navigation menu */
-.main-menu li a {
-  font-size: 1.15rem;
-}
-
-/* Buttons */
-.btn-cta {
-  font-size: 1.1rem;
-  padding: 14px 26px;
-}
-
-/* Profile image slightly bigger */
-.profile-photo {
-  width: 190px;
-  height: auto;
-}
-/* === REVERT TO NORMAL CLEAN SIZE === */
-
-body {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 16px;
-}
-
-h1 {
-  font-size: 32px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.profile-photo {
-  width: 180px;
-  height: auto;
-}
-
-.hero {
-  padding: 60px 0;
-}
-
-.info-card {
-  padding: 20px;
-}
-
-footer {
-  font-size: 14px;
 }
